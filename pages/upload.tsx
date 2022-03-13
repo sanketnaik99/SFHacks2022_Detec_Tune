@@ -68,7 +68,7 @@ const Upload = () => {
             setRecording(false);
             mediaRecorder.stop();
             stream.getTracks().forEach((track) => track.stop());
-          }, 10000);
+          }, 20000);
         })
         .catch((err) => {
           console.log(err);

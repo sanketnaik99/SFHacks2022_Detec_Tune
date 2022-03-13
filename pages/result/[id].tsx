@@ -104,7 +104,13 @@ const Result = () => {
                   ? `${displaySong?.lyrics}`
                   : `${displaySong?.transcript}`}
               </p>
-            ) : null}
+            ) : (
+              <>
+                <p className="leading-relaxed mb-3 w-full h-3 animate-pulse bg-gray-300"></p>
+                <p className="leading-relaxed mb-3 w-2/3 h-3 animate-pulse bg-gray-300"></p>
+                <p className="leading-relaxed mb-3 w-1/2 h-3 animate-pulse bg-gray-300"></p>
+              </>
+            )}
           </div>
           <div>
             <div className="font-bold text-2xl text-center text-gray-700 dark:text-gray-200 mb-4 font-sans">
