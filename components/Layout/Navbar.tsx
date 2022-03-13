@@ -25,13 +25,25 @@ const Navbar: React.FC<Props> = ({ hasDarkModeEnabled, handleThemeToggle }) => {
           <Link href="/">
             <button
               className={[
-                "desktop-nav-button mr-2",
+                "desktop-nav-button",
                 currentRoute === "/"
                   ? "desktop-nav-button-active"
                   : "desktop-nav-button-inactive",
               ].join(" ")}
             >
               Home
+            </button>
+          </Link>
+          <Link href="/upload">
+            <button
+              className={[
+                "desktop-nav-button mr-2",
+                currentRoute === "/"
+                  ? "desktop-nav-button-active"
+                  : "desktop-nav-button-inactive",
+              ].join(" ")}
+            >
+              Upload
             </button>
           </Link>
           <div
