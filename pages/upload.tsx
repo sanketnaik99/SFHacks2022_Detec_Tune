@@ -127,7 +127,9 @@ const Upload = () => {
           Upload.
         </h1>
         <h3 className="mt-4 px-4 md:px-2 text-center text-md md:text-xl text-gray-600 dark:text-gray-300 font-sans font-medium">
-          Select your target language and upload or record a song.
+          Select your target language and upload or record a song. <br /> Note:
+          Upload a small recording (&lt;20 seconds) or click the record button
+          and speak the lyrics of your song.
         </h3>
       </div>
       {/* Dropdown */}
