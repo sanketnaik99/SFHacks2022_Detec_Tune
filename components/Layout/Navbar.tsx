@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import DarkLogo from "../../public/images/dtec-logo-dark.png";
+import LightLogo from "../../public/images/dtec-logo-light.png";
 
 interface Props {
   handleThemeToggle: () => void;
@@ -16,9 +19,11 @@ const Navbar: React.FC<Props> = ({ hasDarkModeEnabled, handleThemeToggle }) => {
       <div className="flex justify-between items-center">
         <Link href="/">
           <a className="flex items-center">
-            <h2 className="dark:border-gray-600 pl-2 sm:pl-4 font-heading ml-2 md:ml-4 text-gray-600 text-2xl sm:text-xl lg:text-2xl font-bold dark:text-white">
-              Music
-            </h2>
+            {hasDarkModeEnabled ? (
+              <Image src={DarkLogo} alt="Dark Logo" width={160} height={40} />
+            ) : (
+              <Image src={LightLogo} alt="Dark Logo" width={160} height={40} />
+            )}
           </a>
         </Link>
         <div className="flex flex-row">
