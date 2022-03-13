@@ -76,8 +76,8 @@ const Home: NextPage = () => {
           Songs History.
         </h1>
         <p className="mt-4 md:mt-6 text-xl text-gray-600 dark:text-gray-300 font-sans text-center px-3 font-semibold">
-          Here's a list of all the songs that have been recognized before. Start
-          typing the lyrics to find your song.
+          Here&apos;s a list of all the songs that have been recognized before.
+          Start typing the lyrics to find your song.
         </p>
       </div>
 
